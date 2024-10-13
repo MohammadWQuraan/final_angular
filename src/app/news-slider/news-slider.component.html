@@ -1,0 +1,44 @@
+<div class="news-slider">
+  <h3>Latest News:</h3>
+  <div class="slider">
+      <div class="slides d-flex">
+          <input type="radio" name="radio-btn" id="radio1" checked>
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+
+          <div class="slide">
+              <img src="{{ slider.image1 }}" alt="">
+              <div class="caption">
+                  <h4>Best Spots For A Summer Vacation</h4>
+                  <p>Check out these spots where we provide you with a discount code! Type VACATION when inserting the promo code and behold the surprise!</p>
+              </div>
+          </div>
+          <div class="slide">
+              <img src="{{ slider.image2 }}" alt="">
+              <div class="caption">
+                  <h4>Explore New Destinations</h4>
+                  <p>Discover hidden gems around the world and make your travel dreams come true.</p>
+              </div>
+          </div>
+          <div class="slide">
+              <img src="{{ slider.image3 }}" alt="">
+              <div class="caption">
+                  <h4>Travel Tips for 2024</h4>
+                  <p>Get the best travel tips to make your journeys smooth and unforgettable.</p>
+              </div>
+          </div>
+
+          <div class="navigation-auto d-flex justify-content-center">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+          </div>
+      </div>
+
+      <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+      </div>
+  </div>
+</div>

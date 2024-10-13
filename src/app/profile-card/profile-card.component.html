@@ -1,0 +1,43 @@
+<div class="container2 row">
+    <div class="profile-card flex-column col-lg-6 col-md-12 mb-4 p-3">
+        <div class="profile-info d-flex justify-content-between align-items-center mb-3">
+            <div class="profile-details d-flex align-items-center">
+                <img src="{{ profile.image }}" alt="Profile Picture" class="profile-pic img-fluid me-3">
+                <div>
+                    <h6>{{ profile.name }}</h6>
+                    <p>{{ profile.major }}</p>
+                </div>
+            </div>
+            <div>
+                <button class="view-profile-btn btn btn-primary" routerLink="/profile">View Profile</button>
+            </div>
+        </div>
+        <div class="d-flex gap-5">
+            <div class="d-flex gap-3 align-items-center">
+                <i class="fa-solid fa-user fa-2xl"></i>
+                <p><strong>Reporting To:</strong><br> {{ profile.reporting }} </p>
+            </div>
+            <div class="d-flex gap-3 align-items-center">
+                <i class="fa-solid fa-chart-column fa-2xl"></i>
+                <p><strong>Corporate Level:</strong><br> {{ profile.level }} </p>
+            </div>
+        </div>
+    </div>
+  
+    <div class="stats d-flex col-lg-3 col-md-12 gap-4">
+        <div class="stat-card d-flex justify-content-between align-items-center p-3">
+            <div>
+                <div class="stat-icon"><i class="fa-solid fa-clipboard-user fa-xl"></i></div>
+                <div class="stat-label">Vacation Requests</div>
+            </div>
+            <div class="stat-number">10</div>
+        </div>
+        <div class="stat-card d-flex justify-content-between align-items-center p-3">
+            <div>
+                <div class="stat-icon"><i class="fa-solid fa-clipboard-user fa-xl"></i></div>
+                <div class="stat-label">Leave Requests</div>
+            </div>
+            <div class="stat-number">10</div>
+        </div>
+    </div>
+  </div>

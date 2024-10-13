@@ -1,0 +1,251 @@
+nav {
+    background-color: #2E7D32;
+    color: white;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .nav-links {
+    gap: 10px;
+}
+
+nav .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav .icons {
+    font-size: 25px;
+}
+/* Slider styles */
+.news-slider {
+    margin: 20px;
+}
+
+.slider {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    /*display: flex;*/
+    width: 300%; /* Adjusted width */
+    height: 105%;
+    
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 33.33%; /* Adjusted width */
+    flex-shrink: 0;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 100%;
+    /*display: flex;
+    justify-content: center;*/
+    margin-top: -40px;
+}
+
+.auto-btn1, .auto-btn2, .auto-btn3 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+/* Automatic Sliding */
+@keyframes slide {
+    0%, 20% {
+        margin-left: 0; /* First slide */
+    }
+    25%, 45% {
+        margin-left: -100%; /* Second slide */
+    }
+    50%, 70% {
+        margin-left: -200%; /* Third slide */
+    }
+    75%, 100% {
+        margin-left: 0; /* Loop back to first slide */
+    }
+}
+
+.slides {
+    animation: slide 10s infinite;
+}
+.vacation-requests-container {
+    margin: 20px;
+    background-color: #e1e2e2;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vacation-requests-container h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2E7D32;
+}
+
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px 40px 10px 40px; /* Adds space for the icon */
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box; /* Makes sure padding doesn't affect width */
+}
+
+.search-container i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 16px;
+}
+
+.vacation-requests {
+    /*display: flex;*/
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 70px;
+}
+
+.vacation-card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+}
+
+.vacation-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.vacation-details h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+.vacation-details p {
+    margin: 5px 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.vacation-actions {
+    /*display: flex;*/
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.decline-btn, .approve-btn {
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.decline-btn {
+    background-color: transparent;
+    color: #2E7D32;
+    border: 2px solid #2E7D32;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.approve-btn {
+    display: inline-block;
+    border: none;
+    padding: 6px 20px;
+    font-size: 15px;
+    color: white;
+    border-radius: 8px;
+    background-color: #2E7D32;
+    cursor: pointer;
+}
+
+.view-more {
+    display: inline-block;
+    margin-top: 20px;
+    color: #2E7D32;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: right;
+    width: 100%;
+}
+.stat-icon {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+/* You can add global styles to this file, and also import other style files */
+.highlighter {
+    background-color:#2E7D32 !important;
+    font-weight: bold;
+  }
+  
